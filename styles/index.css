@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+/* Variáveis de cores */
+:root {
+    --primary-color: #3c1c14;
+    --secondary-color: #f7f5ed;
+    --tertiary-color: #ca5b2b;
+    --quaternary-color: #9d8c84;
+    --quinary-color: #826e63;
+}
+
+/* Estilos globais */
+* {
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--quaternary-color);
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--quinary-color);
+}
+
+#logo{
+    width: 100px;
+}
+
+/* Controles do carrossel */
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+}
+
+/* Principal */
+main {
+    background-color: var(--secondary-color);
+}
+
+.produto a {
+    text-decoration: none;
+}
+
+.produto a:hover {
+    color: var(--primary-color); /* Muda a cor para um cinza claro */
+    text-decoration: underline; /* Adiciona sublinhado */
+}
+
+.produto {
+    flex: 0 0 20%; /* Ajuste a largura mínima conforme necessário */
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+#contact img {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+
+::-webkit-scrollbar {
+    width: 0px; /* Largura da barra de rolagem */
+  }
+  
