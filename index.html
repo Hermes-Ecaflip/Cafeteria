@@ -1,110 +1,216 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="shortcut icon" href="img/LOGO OFICIAL.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles/index.css">
-    <title>EYZE COFFE</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EYZE Coffee — cafés artesanais, torra própria e grãos selecionados. Sabor de verdade, do grão à xícara.">
+  <title>EYZE Coffee — Café artesanal de verdade</title>
+  <link rel="icon" href="assets/img/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Cabeçalho com navegação -->
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand col-5" href="index.html">
-                    <img id="logo" class="ms-5" src="img/LOGO OFICIAL.png" alt="logo Eyze Coffe">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active me-2" href="index.html"><i class="fas fa-home me-2"></i>Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link me-2" href="catalogo.html"><i class="fas fa-mug-hot me-2"></i>Catálogo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="sobre.html"><i class="fas fa-info-circle me-2"></i>Sobre nós</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="parceiras.html"><i class="fa-solid fa-users me-2"></i>Parceiras</a>
-                        </li>
-                    </ul>
-                </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.png" alt="">
+        <span>EYZE <em>Coffee</em></span>
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      <ul class="nav-links">
+        <li><a class="active" href="index.html"><i class="fa-solid fa-house"></i>Início</a></li>
+        <li><a href="catalogo.html"><i class="fa-solid fa-mug-hot"></i>Catálogo</a></li>
+        <li><a href="sobre.html"><i class="fa-solid fa-circle-info"></i>Sobre</a></li>
+        <li><a href="parceiras.html"><i class="fa-solid fa-handshake"></i>Parceiras</a></li>
+        <li>
+          <button class="nav-cart" aria-label="Abrir carrinho">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="count" style="display:none">0</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO CAROUSEL -->
+  <section class="hero">
+    <div class="carousel" data-carousel>
+      <div class="slide is-active"><img src="assets/img/grani-di-byte.jpg" alt="Xícara de café com grãos torrados"></div>
+      <div class="slide"><img src="assets/img/banner-1.jpg" alt="Três xícaras de cappuccino com latte art"></div>
+      <div class="slide"><img src="assets/img/banner-2.jpg" alt="Café preparado na cafeteria"></div>
+
+      <div class="hero-content">
+        <div class="container">
+          <span class="eyebrow">Torra própria · Grãos selecionados</span>
+          <h1>Do grão à xícara, <em>sabor de verdade</em>.</h1>
+          <p>Cafés artesanais preparados com paixão. Descubra blends exclusivos, métodos coados e o aroma que transforma o seu dia.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="catalogo.html"><i class="fa-solid fa-mug-saucer"></i> Ver catálogo</a>
+            <a class="btn btn-outline" href="sobre.html">Nossa história</a>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-arrow prev" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="carousel-arrow next" aria-label="Próximo"><i class="fa-solid fa-chevron-right"></i></button>
+      <div class="carousel-dots"></div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section">
+    <div class="container">
+      <div class="features">
+        <div class="feature reveal">
+          <div class="ic"><i class="fa-solid fa-seedling"></i></div>
+          <h3>Grãos selecionados</h3>
+          <p>Origens únicas de fazendas parceiras, escolhidas grão a grão para uma xícara impecável.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="ic"><i class="fa-solid fa-fire-burner"></i></div>
+          <h3>Torra própria</h3>
+          <p>Torramos em pequenos lotes para preservar o frescor, o aroma e o caráter de cada blend.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="ic"><i class="fa-solid fa-heart"></i></div>
+          <h3>Feito com carinho</h3>
+          <p>Cada preparo é uma pequena obra — do coado lento ao espresso encorpado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS PREVIEW -->
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Os favoritos</span>
+        <h2>Explore nossos cafés</h2>
+      </div>
+      <div class="product-grid">
+        <article class="card reveal" data-product="cappuccino" data-name="Cappuccino" data-price="14.90" data-cat="quente" data-img="assets/img/banner-1.jpg">
+          <div class="card-media"><img src="assets/img/banner-1.jpg" alt="Cappuccino"><span class="card-tag">Quente</span></div>
+          <div class="card-body">
+            <h3>Cappuccino</h3>
+            <p class="desc">Espresso encorpado, leite vaporizado e uma coroa de espuma aveludada.</p>
+            <div class="card-foot">
+              <div class="price">R$ 14,90 <small>/ un.</small></div>
+              <button class="add-btn" data-add aria-label="Adicionar ao carrinho"><i class="fa-solid fa-plus"></i></button>
             </div>
-        </nav>
-    </header>
-    <!-- Carrossel principal -->
-    <main class="">
-        <section id="carousel">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
-                </div>
-                <div class="carousel-inner">
-                    <!-- Itens do carrossel -->
-                    <div class="carousel-item active">
-                        <img src="img/Grani di byte.svg" class="d-block w-100" alt="Eyze">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/Banner 1.svg" class="d-block w-100" alt="Banner1">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/Banner 2.svg" class="d-block w-100" alt="Banner2">
-                    </div>
-                </div>
-                <!-- Controles do carrossel -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Próximo</span>
-                </button>
+          </div>
+        </article>
+        <article class="card reveal" data-product="affogato" data-name="Affogato" data-price="16.90" data-cat="gelado" data-img="assets/img/sobre-3.jpg">
+          <div class="card-media"><img src="assets/img/sobre-3.jpg" alt="Affogato"><span class="card-tag">Gelado</span></div>
+          <div class="card-body">
+            <h3>Affogato</h3>
+            <p class="desc">Sorvete cremoso "afogado" em um shot quente de espresso intenso.</p>
+            <div class="card-foot">
+              <div class="price">R$ 16,90 <small>/ un.</small></div>
+              <button class="add-btn" data-add aria-label="Adicionar ao carrinho"><i class="fa-solid fa-plus"></i></button>
             </div>
-        </section>
-        <section id="produtos" class="container-fluid text-dark container-fluid p-0 m-0">
-            <h2 class="text-center mb-5 mt-5">EXPLORE NOSSOS PRODUTOS</h2>
-            <div id="demonstracao" class="container-fluid p-0 m-0 d-flex justify-content-evenly text-center">
-                <!-- Produto 1 -->
-                <div class="produto col-4">
-                    <a href="catalogo.html">
-                        <img src="img/Cappuccino.svg" alt="Cappuccino">
-                        <h4 class="text-dark">Cappuccino</h4>
-                    </a>
-                </div>
-                <!-- Produto 2 -->
-                <div class="produto col-4">
-                    <a href="catalogo.html">
-                        <img src="img/Affogato.svg" alt="Affogato">
-                        <h4 class="text-dark">Affogato</h4>
-                    </a>
-                </div>
-                <!-- Produto 3 -->
-                <div class="produto col-4">
-                    <a href="catalogo.html">
-                        <img src="img/Cold Brew.svg" alt="Cold Brew">
-                        <h4 class="text-dark">Cold Brew</h4>
-                    </a>
-                </div>
+          </div>
+        </article>
+        <article class="card reveal" data-product="coldbrew" data-name="Cold Brew" data-price="15.90" data-cat="gelado" data-img="assets/img/sobre-5.jpg">
+          <div class="card-media"><img src="assets/img/sobre-5.jpg" alt="Cold Brew"><span class="card-tag">Gelado</span></div>
+          <div class="card-body">
+            <h3>Cold Brew</h3>
+            <p class="desc">Extração a frio por 18 horas: suave, doce e surpreendentemente refrescante.</p>
+            <div class="card-foot">
+              <div class="price">R$ 15,90 <small>/ un.</small></div>
+              <button class="add-btn" data-add aria-label="Adicionar ao carrinho"><i class="fa-solid fa-plus"></i></button>
             </div>
-        </section>
-        <section id="contact" class="">
-            <!-- Imagem para desktop -->
-            <img src="img/Contact.svg" class="img-fluid d-none d-md-block" alt="Imagem para desktop">
-            <!-- Imagem para mobile -->
-            <img src="img/Contact Mobile.svg" class="img-fluid d-block d-md-none" alt="Imagem para mobile">
-        </section>
-    </main>
-    <!-- Scripts do Bootstrap e FontAwesome -->
+          </div>
+        </article>
+      </div>
+      <div style="text-align:center;margin-top:44px" class="reveal">
+        <a class="btn btn-dark" href="catalogo.html">Ver catálogo completo <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT STRIP -->
+  <section class="section">
+    <div class="container about-grid">
+      <div class="reveal">
+        <span class="eyebrow">Nossa essência</span>
+        <h2>Mais do que café, uma experiência.</h2>
+        <p>A EYZE nasceu do desejo de levar o melhor da cultura do café para o dia a dia das pessoas. Selecionamos grãos de origem, torramos com cuidado artesanal e servimos cada xícara como ela merece.</p>
+        <p>Do espresso curto ao coado lento, nosso compromisso é com o sabor, o frescor e o ritual de uma boa pausa.</p>
+        <a class="btn btn-primary" href="sobre.html" style="margin-top:10px">Conheça a história</a>
+      </div>
+      <div class="about-figure reveal">
+        <img src="assets/img/sobre-2.jpg" alt="Preparo de café artesanal">
+        <div class="badge"><strong>+8</strong><span>anos torrando café</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section dark cta">
+    <div class="container reveal">
+      <span class="eyebrow" style="color:var(--latte)">Pronto para um café?</span>
+      <h2>Sua próxima xícara favorita<br>está a um clique.</h2>
+      <p>Monte seu pedido com os cafés que você ama e receba todo o aroma da EYZE.</p>
+      <a class="btn btn-primary" href="catalogo.html"><i class="fa-solid fa-mug-hot"></i> Pedir agora</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="col">
+          <div class="footer-brand"><img src="assets/img/logo.png" alt=""><span>EYZE <em>Coffee</em></span></div>
+          <p>Café artesanal de torra própria. Do grão à xícara, com sabor de verdade.</p>
+          <div class="socials">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="col"><h4>Navegação</h4><ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="parceiras.html">Parceiras</a></li>
+        </ul></div>
+        <div class="col"><h4>Cafés</h4><ul>
+          <li><a href="catalogo.html">Cappuccino</a></li>
+          <li><a href="catalogo.html">Affogato</a></li>
+          <li><a href="catalogo.html">Cold Brew</a></li>
+          <li><a href="catalogo.html">Espresso</a></li>
+        </ul></div>
+        <div class="col"><h4>Contato</h4><ul>
+          <li><a href="parceiras.html"><i class="fa-solid fa-location-dot"></i> Brasília, DF</a></li>
+          <li><a href="parceiras.html"><i class="fa-solid fa-phone"></i> (61) 99999-0000</a></li>
+          <li><a href="parceiras.html"><i class="fa-solid fa-envelope"></i> ola@eyzecoffee.com</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2025</span> EYZE Coffee. Todos os direitos reservados.</span>
+        <span>Feito com <i class="fa-solid fa-mug-hot" style="color:var(--terracota)"></i> e muito café.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CART DRAWER -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrinho de compras">
+    <div class="cart-head">
+      <h3>Seu carrinho</h3>
+      <button class="cart-close" aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-foot" id="cartFoot" style="display:none">
+      <div class="cart-total"><span>Total</span><strong id="cartTotal">R$ 0,00</strong></div>
+      <button class="btn btn-primary btn-block" id="checkoutBtn"><i class="fa-solid fa-credit-card"></i> Finalizar pedido</button>
+    </div>
+  </aside>
+
+  <script src="assets/js/main.js"></script>
 </body>
-<script src="https://kit.fontawesome.com/13033c9605.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>
